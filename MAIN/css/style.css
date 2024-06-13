@@ -25,10 +25,6 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
-
 ol, ul {
   list-style: none;
 }
@@ -49,7 +45,7 @@ table {
 }
 
 header {
-  background-color: rgb(10, 14, 133);
+  background-color: #e9e9e9;
   width: 100%;
   height: 76px;
   position: fixed;
@@ -64,7 +60,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-shadow: 0 0 30px 2px #2ca2aa;
-  box-shadow: 0 0 30px 2px #2ca2aa;
+  box-shadow: 30px #117d85;
   z-index: 10;
 }
 header div {
@@ -84,6 +80,12 @@ header div img {
 header div nav {
   margin-top: 28px;
 }
+header div nav #current {
+  color: black;
+}
+header div nav #current:hover {
+  font-size: 23px;
+}
 header div nav a {
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -97,7 +99,6 @@ header div nav a {
 }
 header div nav a:hover {
   font-size: 23px;
-  color: #00e77f;
 }
 @media only screen and (max-width: 480px) {
   header div nav a {
@@ -148,90 +149,116 @@ header div form button {
 }
 
 main {
-  margin: 0 auto;
   margin-top: 134px;
 }
 main img {
-  width: 100%;
-  height: 700px;
-  margin-bottom: 100px;
-}
-@media only screen and (max-width: 480px) {
-  main img {
-    height: 400px;
-  }
+  display: block;
+  margin: 0 auto;
+  max-width: 81vw;
+  max-height: 90vh;
 }
 main h1 {
   display: flex;
   justify-content: center;
+  margin-top: 200px;
   margin-bottom: 40px;
   font-size: 30px;
   font-weight: 700;
-  font-family: "ALK Rounded Nusx Med", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 main h1::first-line {
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 main div {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
-  margin-bottom: 50px;
 }
 main div div {
   width: 300px;
   display: flex;
   flex-direction: column;
+  margin-left: 40px;
   margin-bottom: 40px;
 }
 main div div img {
-  width: 300px;
-  height: 200px;
+  width: 290px;
+  height: 271px;
   margin-bottom: 60px;
 }
-main div div a {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  transition: 1s;
-}
-main div div a:hover {
-  scale: 1.5;
-}
-main div div a h2 {
-  color: aqua;
+main div div h2 {
+  color: black;
   font-size: 18px;
   font-family: "Roboto Condensed", sans-serif;
   margin-bottom: 5px;
 }
-main div div a p {
-  color: rgb(86, 254, 198);
-  font-size: 16px;
+main div div p {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
   font-family: "Roboto Condensed", sans-serif;
 }
 
 footer {
-  height: 300px;
-  background-color: #00e77f;
+  width: 100%;
+  min-height: 250px;
+  background-color: #243043;
+  position: absolute;
+}
+footer ol {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #818687;
+  list-style-type: none;
+  margin-top: 59px;
+  margin-right: 75px;
+}
+footer li {
+  margin-bottom: 14px;
 }
 footer div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 137px;
+}
+@media only screen and (max-width: 480px) {
+  footer div {
+    margin-left: 46px;
+  }
+}
+footer p {
+  position: relative;
+  left: 100px;
+  width: 249px;
+  height: 14px;
+  margin-top: 59px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 400;
+}
+footer #for-arrow {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  margin: 0;
 }
-footer div div {
+footer #for-arrow #ball {
   width: 70px;
   height: 70px;
   border-radius: 50%;
   background-color: #2ca2aa;
 }
-footer div div a {
+footer #for-arrow #ball a {
   color: #000000;
 }
-footer div div a:hover {
+footer #for-arrow #ball a:hover {
   color: #188827;
 }
-footer div div a i {
+footer #for-arrow #ball a i {
   font-size: 47px !important;
   margin: 12px;
 }
