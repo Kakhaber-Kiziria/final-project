@@ -18,21 +18,26 @@
 </head>
 <body>
     <header>
-        <div>
-            <a href="https://www.tbceducation.ge" target="_blank"><img src="images/tbc-logo.png" alt="TBC-LOGO"></a>
-            <nav>
+        <nav>
+            <div id="brand-logo"><a href="https://www.tbceducation.ge" target="_blank"><img src="images/tbc-logo.png" alt="TBC-LOGO"></a></div>
+            <input type="checkbox" id="burger-toggle">
+            <label for="burger-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div id="navbar-links">
                 <a href="#" id="current">Main Page</a>
                 <a href="ABOUT-US/about.html">About Us</a>
                 <a href="SERVICES/service.html">Services</a>
                 <a href="NEWS/news.html">News</a>
                 <a href="CONTACT/contact.html">Contact</a>
-            </nav>           
-             <form>
+            </div>
+            <form>
                 <input type="text" placeholder="Search..">
                 <button type="reset">Search</button>
             </form>  
-            <i class="fa fa-bars"></i>
-        </div>
+        </nav>
     </header>
 
     <main>
