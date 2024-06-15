@@ -188,3 +188,48 @@ header nav form button {
     display: none;
   }
 }
+
+main div {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 59px;
+  width: 100%;
+}
+main div textarea {
+  background-color: #F8F8F8;
+  width: 45vw;
+  height: 298px;
+  resize: none;
+  border: 4px solid rgba(213, 211, 211, 0.3);
+  margin: 0 auto;
+}
+main div form {
+  width: 100%;
+  margin-bottom: 50px;
+}
+main div form div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 59px;
+  width: 100%;
+}
+main div form div input {
+  background-color: #F8F8F8;
+  border: 2px solid rgba(213, 211, 211, 0.3);
+  padding: 20px;
+  width: 30vw;
+  margin: 0 auto;
+  margin-bottom: 34px;
+}
+main div form div button {
+  width: 30vw;
+  height: 61px;
+  background-color: #5968F4;
+  color: white;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+main div form div button:hover {
+  border: 2px solid rgba(213, 211, 211, 0.3);
+  background-color: #3a429b;
+}

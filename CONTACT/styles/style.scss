@@ -143,3 +143,53 @@ header {
         }
     }
 }
+main {
+    div {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 59px;
+        width: 100%;
+
+        textarea {
+            background-color: #F8F8F8;
+            width: 45vw;
+            height: 298px;
+            resize: none;
+            border: 4px solid rgba(213, 211, 211, 0.3);
+            margin: 0 auto;
+        }
+        form {
+            width: 100%;
+            margin-bottom: 50px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                margin-top: 59px;
+                width: 100%;
+            
+                input {
+                    background-color: #F8F8F8;
+                    border: 2px solid rgba(213, 211, 211, 0.3);
+                    padding: 20px;
+                    width: 30vw;
+                    margin: 0 auto;
+                    margin-bottom: 34px;
+                }
+                button {
+                    width: 30vw;
+                    height: 61px;
+                    background-color: #5968F4;
+                    color: white;
+                    margin: 0 auto;
+                    margin-top: 5px;
+    
+                    &:hover {
+                        border: 2px solid rgba(213, 211, 211, 0.3);
+                        background-color: #3a429b;
+                    }
+                }
+            }
+        }
+    }
+}
