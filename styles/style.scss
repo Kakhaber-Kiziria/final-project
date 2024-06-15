@@ -197,6 +197,11 @@ main {
             border: 5px solid rgb(139, 139, 150);
             border-radius: 10px;
             background-color: white;
+
+            @media only screen and (max-width:480px) {
+                margin: 0 auto;
+                margin-bottom: 80px;
+            }
        
 
             img {

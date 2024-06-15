@@ -198,6 +198,7 @@ main div {
 main div textarea {
   background-color: #F8F8F8;
   width: 45vw;
+  min-width: 300px;
   height: 298px;
   resize: none;
   border: 4px solid rgba(213, 211, 211, 0.3);
@@ -218,11 +219,13 @@ main div form div input {
   border: 2px solid rgba(213, 211, 211, 0.3);
   padding: 20px;
   width: 30vw;
+  min-width: 300px;
   margin: 0 auto;
   margin-bottom: 34px;
 }
 main div form div button {
   width: 30vw;
+  min-width: 340px;
   height: 61px;
   background-color: #5968F4;
   color: white;
@@ -232,4 +235,55 @@ main div form div button {
 main div form div button:hover {
   border: 2px solid rgba(213, 211, 211, 0.3);
   background-color: #3a429b;
+}
+main #div {
+  width: 100%;
+}
+main #div div {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 50px auto;
+}
+main #div div p {
+  margin-bottom: 22px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 480px) {
+  main #div div p {
+    font-size: 14px;
+  }
+}
+main #div div iframe {
+  width: 40vw;
+  min-width: 300px;
+  height: 40vh;
+}
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 100px 0;
+}
+footer div {
+  border: 2px solid #5012D5;
+  margin: 0 41px;
+  height: 48px;
+  width: 0;
+}
+footer #img1 {
+  width: 50px;
+  height: 50px;
+  margin-left: 96px;
+}
+@media only screen and (max-width: 480px) {
+  footer #img1 {
+    margin-left: 50px;
+  }
+}
+footer #img2 {
+  width: 71px;
+  height: 49px;
 }
