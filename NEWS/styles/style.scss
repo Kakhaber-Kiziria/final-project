@@ -1,0 +1,145 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import "resetstyles";
+
+html {
+    background-color: #243043;
+}
+
+header {
+    -webkit-box-shadow: 0 0 30px 2px #2ca2aa;
+    box-shadow: 30px #117d85;
+    z-index: 10;
+
+    nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        background-color: #333;
+        width: 100%;
+
+
+        #brand-logo {
+            color: #fff;
+            font-size: 1.5em;
+
+            img {
+                height: 60px;
+            }
+        }
+        #navbar-links {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                -webkit-transition: 1s;
+                -o-transition: 1s;
+                transition: 1s;
+                font-family: "Roboto Condensed", sans-serif;
+                font-size: 19px;
+                font-weight: 400;
+                margin-right: 30px;
+
+                @media (max-width: 570px) {
+                    padding: 15px 0;
+                    border-top: 1px solid #444;
+                }
+                @media (max-width: 768px) {
+                    margin-right: 30px;
+                }
+                &:hover {
+                    font-size: 23px;
+                }
+            }
+            #current {
+                color: blue;
+    
+                &:hover {
+                    font-size: 23px;
+                }
+            }
+            @media (max-width: 570px) {
+                display: none;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                width: 100%;
+                text-align: center;
+                background-color: #333;
+            }
+        }
+        #burger-toggle {
+            display: none;
+        }
+        label {
+            display: none;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            cursor: pointer;
+
+            span {
+                height: 3px;
+                width: 25px;
+                background-color: #fff;
+                margin: 4px 0;
+                -webkit-transition: 0.4s;
+                -o-transition: 0.4s;
+                transition: 0.4s;
+            }
+
+            @media (max-width: 570px) {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                margin-right: 30px;
+            }
+            
+        }
+        @media (max-width: 570px) {
+            input:checked ~ #navbar-links {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+            }
+        }
+        form {
+            margin-right: 20px;
+    
+            input {
+                width: 160px;
+                height: 25px;
+                background-color: white;
+                border: 0;
+                border-radius: 5px;
+                margin-right: 10px;
+            }
+            button {
+                background-color: white;
+                height: 25px;
+                border: 0;
+                border-radius: 5px;
+            }
+
+            @media only screen and (max-width: 774px) {
+                display: none;
+            }
+        }
+    }
+}
