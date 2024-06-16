@@ -203,7 +203,8 @@ main h1 {
   justify-content: center;
   margin-top: 100px;
   margin-bottom: 40px;
-  font-size: 30px;
+  color: white;
+  font-size: 33px;
   font-weight: 700;
   font-family: "Roboto Condensed", sans-serif;
 }

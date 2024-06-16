@@ -31,10 +31,6 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
-
 ol, ul {
   list-style: none;
 }
@@ -187,4 +183,80 @@ header nav form button {
   header nav form {
     display: none;
   }
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+main div {
+  margin-top: 50px;
+  border: 10px solid black;
+  padding: 5px;
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+}
+main div h1 {
+  font-size: 45px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  margin: 50px 0;
+}
+main div img {
+  width: 100%;
+  margin: 20px 0;
+}
+main div p {
+  font-size: 18px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  min-height: 250px;
+  background-color: #104292;
+  position: absolute;
+  margin-top: 50px;
+}
+footer ol {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #818687;
+  list-style-type: none;
+  margin-top: 59px;
+  margin-right: 75px;
+}
+footer li {
+  margin-bottom: 14px;
+}
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 137px;
+}
+@media only screen and (max-width: 480px) {
+  footer div {
+    margin-left: 46px;
+  }
+}
+footer p {
+  position: relative;
+  left: 100px;
+  width: 249px;
+  height: 14px;
+  margin-top: 59px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 400;
+}
+footer #owl {
+  margin-top: 61px;
 }

@@ -190,7 +190,12 @@ header nav form button {
 }
 
 main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   margin-top: 59px;
   width: 100%;
@@ -198,18 +203,28 @@ main div {
 main div textarea {
   background-color: #F8F8F8;
   width: 45vw;
-  min-width: 300px;
+  min-width: 200px;
   height: 298px;
   resize: none;
   border: 4px solid rgba(213, 211, 211, 0.3);
   margin: 0 auto;
+}
+@media only screen and (max-width: 480px) {
+  main div textarea {
+    height: 175px;
+  }
 }
 main div form {
   width: 100%;
   margin-bottom: 50px;
 }
 main div form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 59px;
   width: 100%;
@@ -219,13 +234,19 @@ main div form div input {
   border: 2px solid rgba(213, 211, 211, 0.3);
   padding: 20px;
   width: 30vw;
-  min-width: 300px;
+  min-width: 200px;
   margin: 0 auto;
   margin-bottom: 34px;
 }
+@media only screen and (max-width: 480px) {
+  main div form div input {
+    height: 0;
+    padding: 14px;
+  }
+}
 main div form div button {
   width: 30vw;
-  min-width: 340px;
+  min-width: 160px;
   height: 61px;
   background-color: #5968F4;
   color: white;
@@ -236,11 +257,21 @@ main div form div button:hover {
   border: 2px solid rgba(213, 211, 211, 0.3);
   background-color: #3a429b;
 }
+@media only screen and (max-width: 480px) {
+  main div form div button {
+    height: 40px;
+  }
+}
 main #div {
   width: 100%;
 }
 main #div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: auto;
   margin: 50px auto;
@@ -258,32 +289,84 @@ main #div div p {
 }
 main #div div iframe {
   width: 40vw;
-  min-width: 300px;
-  height: 40vh;
+  min-width: 250px;
+  height: 44vh;
 }
-
-footer {
+main #links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
-  margin: 100px 0;
 }
-footer div {
+main #links #line {
   border: 2px solid #5012D5;
   margin: 0 41px;
   height: 48px;
   width: 0;
 }
-footer #img1 {
+main #links #img1 {
   width: 50px;
   height: 50px;
   margin-left: 96px;
 }
 @media only screen and (max-width: 480px) {
-  footer #img1 {
+  main #links #img1 {
     margin-left: 50px;
   }
 }
-footer #img2 {
+main #links #img2 {
   width: 71px;
   height: 49px;
+}
+
+footer {
+  width: 100%;
+  min-height: 250px;
+  background-color: #104292;
+  position: absolute;
+  margin-top: 50px;
+}
+footer ol {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #818687;
+  list-style-type: none;
+  margin-top: 59px;
+  margin-right: 75px;
+}
+footer li {
+  margin-bottom: 14px;
+}
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 137px;
+}
+@media only screen and (max-width: 480px) {
+  footer div {
+    margin-left: 46px;
+  }
+}
+footer p {
+  position: relative;
+  left: 100px;
+  width: 249px;
+  height: 14px;
+  margin-top: 59px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 400;
+}
+footer #owl {
+  margin-top: 61px;
 }
