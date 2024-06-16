@@ -318,4 +318,34 @@ footer {
             }
         }
     }
-} 
+    #links {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        margin: 30px 0;
+
+        div {
+            border: 2px solid black;
+            margin: 0 41px;
+            height: 48px;
+            width: 0;
+        }
+        #img1 {
+            width: 50px;
+            height: 50px;
+            margin-left: 96px;
+
+            @media only screen and (max-width:480px) {
+                margin-left: 50px;
+            }
+        }
+        #img2 {
+            width: 71px;
+            height: 49px;
+        }
+    }
+}
