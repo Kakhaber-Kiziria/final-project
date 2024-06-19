@@ -248,6 +248,8 @@ main div div div h1 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   color: black;
+  border-bottom: 4px solid #444;
+  align-items: center;
 }
 @media only screen and (max-width: 480px) {
   main div div div h1 {
