@@ -226,8 +226,8 @@ main {
             display: flex;
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
             width: auto;
             margin: 50px auto;
             
@@ -243,10 +243,14 @@ main {
                 }
             }        
             iframe {
-            width: 40vw;
-            min-width: 250px;
-            height: 44vh;
+            width: 70vw;
+            height: 550px;
             margin-top: 20px;
+
+                @media only screen and (max-width:480px) {
+                   width: 80vw; 
+                   height: 250px;
+                }
             }
         }    
     }
