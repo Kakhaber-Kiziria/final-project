@@ -278,7 +278,7 @@ main #div div {
 }
 main #div div p {
   margin-bottom: 22px;
-  color: black;
+  color: white;
   font-size: 20px;
   font-weight: bold;
 }
@@ -291,6 +291,7 @@ main #div div iframe {
   width: 40vw;
   min-width: 250px;
   height: 44vh;
+  margin-top: 20px;
 }
 main #links {
   display: -webkit-box;
