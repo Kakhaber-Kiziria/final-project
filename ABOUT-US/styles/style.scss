@@ -274,6 +274,32 @@ footer {
     #owl {
         margin-top: 61px;
     }
+    #for-arrow {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        margin: 0;
+
+        #ball {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #2ca2aa;
+
+            a {
+                color: #000000;
+
+                &:hover {
+                    color: #188827;
+                }
+            
+                i {
+                   font-size: 47px !important;
+                   margin: 12px;
+                }
+            }
+        }
+    }
     #links {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -304,4 +330,5 @@ footer {
             height: 49px;
         }
     }
+    
 }

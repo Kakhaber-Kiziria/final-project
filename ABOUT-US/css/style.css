@@ -313,6 +313,28 @@ footer p {
 footer #owl {
   margin-top: 61px;
 }
+footer #for-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  margin: 0;
+}
+footer #for-arrow #ball {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #2ca2aa;
+}
+footer #for-arrow #ball a {
+  color: #000000;
+}
+footer #for-arrow #ball a:hover {
+  color: #188827;
+}
+footer #for-arrow #ball a i {
+  font-size: 47px !important;
+  margin: 12px;
+}
 footer #links {
   display: -webkit-box;
   display: -ms-flexbox;
