@@ -191,7 +191,7 @@ main {
 }
 main div {
   margin-top: 50px;
-  border: 10px solid black;
+  border: 10px solid #444;
   padding: 5px;
   border-top-left-radius: 45px;
   border-bottom-right-radius: 45px;
