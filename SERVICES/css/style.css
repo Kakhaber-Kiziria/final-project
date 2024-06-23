@@ -31,14 +31,6 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
 blockquote, q {
   quotes: none;
 }
@@ -189,6 +181,55 @@ header nav form button {
   }
 }
 
+main {
+  width: 95%;
+  margin: 0 auto;
+}
+main h1 {
+  font-size: 45px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: deepskyblue;
+}
+main h2 {
+  font-size: 30px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: red;
+}
+main h3 {
+  font-size: 25px;
+  font-weight: 900;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-left: 42px;
+}
+main ul {
+  margin-left: 60px;
+}
+main ul li {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 8px;
+  color: aqua;
+}
+main p {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-top: 15px;
+  margin-left: 42px;
+}
+
 footer {
   width: 100%;
   min-height: 250px;
@@ -236,6 +277,28 @@ footer p {
 }
 footer #owl {
   margin-top: 61px;
+}
+footer #for-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  margin: 0;
+}
+footer #for-arrow #ball {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #2ca2aa;
+}
+footer #for-arrow #ball a {
+  color: #000000;
+}
+footer #for-arrow #ball a:hover {
+  color: #188827;
+}
+footer #for-arrow #ball a i {
+  font-size: 47px !important;
+  margin: 12px;
 }
 footer #links {
   display: -webkit-box;
