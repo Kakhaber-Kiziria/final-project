@@ -58,6 +58,9 @@ header {
   -webkit-box-shadow: 0 0 30px 2px #2ca2aa;
   box-shadow: 30px #117d85;
   z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 header nav {
   display: -webkit-box;
@@ -185,6 +188,9 @@ header nav form button {
   }
 }
 
+main {
+  margin-top: 80px;
+}
 main div {
   display: flex;
   flex-flow: row wrap;

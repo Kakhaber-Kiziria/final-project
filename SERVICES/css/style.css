@@ -54,6 +54,9 @@ header {
   -webkit-box-shadow: 0 0 30px 2px #2ca2aa;
   box-shadow: 30px #117d85;
   z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 header nav {
   display: -webkit-box;
@@ -184,6 +187,7 @@ header nav form button {
 main {
   width: 95%;
   margin: 0 auto;
+  margin-top: 80px;
 }
 main h1 {
   font-size: 45px;
@@ -212,8 +216,23 @@ main h3 {
   margin-bottom: 15px;
   margin-left: 42px;
 }
+@media only screen and (max-width: 600px) {
+  main h3 {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+}
 main ul {
   margin-left: 60px;
+}
+@media only screen and (max-width: 600px) {
+  main ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 11px;
+  }
 }
 main ul li {
   font-size: 20px;
@@ -228,6 +247,13 @@ main p {
   color: white;
   margin-top: 15px;
   margin-left: 42px;
+}
+@media only screen and (max-width: 600px) {
+  main p {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
 }
 
 footer {

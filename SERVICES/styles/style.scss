@@ -15,6 +15,9 @@ header {
     -webkit-box-shadow: 0 0 30px 2px #2ca2aa;
     box-shadow: 30px #117d85;
     z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     nav {
         display: -webkit-box;
@@ -148,6 +151,7 @@ header {
 main {
     width: 95%;
     margin: 0 auto;
+    margin-top: 80px;
 
     h1 {
         font-size: 45px;
@@ -175,9 +179,22 @@ main {
         margin-top: 30px;
         margin-bottom: 15px;
         margin-left: 42px;
+
+        @media only screen and (max-width:600px) {
+            display: flex;
+            justify-content: center;
+            margin-left: 0;
+        }    
     }
     ul {
         margin-left: 60px;
+
+        @media only screen and (max-width:600px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 11px;
+        }
 
         li {
             font-size: 20px;
@@ -193,6 +210,13 @@ main {
         color: white;
         margin-top: 15px;
         margin-left: 42px;
+
+
+        @media only screen and (max-width:600px) {
+            display: flex;
+            justify-content: center;
+            margin-left: 0;
+        }
     }
 }
 

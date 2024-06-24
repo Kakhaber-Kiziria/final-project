@@ -58,6 +58,9 @@ header {
   -webkit-box-shadow: 0 0 30px 2px #2ca2aa;
   box-shadow: 30px #117d85;
   z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 header nav {
   display: -webkit-box;
@@ -193,7 +196,7 @@ main div {
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  margin-top: 59px;
+  margin-top: 110px;
   width: 100%;
 }
 main div textarea {
@@ -212,7 +215,6 @@ main div textarea {
 }
 main div form {
   width: 100%;
-  margin-bottom: 50px;
 }
 main div form div {
   display: -webkit-box;
@@ -236,7 +238,7 @@ main div form div input {
 }
 @media only screen and (max-width: 480px) {
   main div form div input {
-    height: 0;
+    height: 16px;
     padding: 14px;
   }
 }
@@ -261,6 +263,11 @@ main div form div button:hover {
 main #div {
   width: 100%;
 }
+@media only screen and (max-width: 480px) {
+  main #div {
+    margin-top: 40px;
+  }
+}
 main #div div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,6 +288,7 @@ main #div div p {
 @media only screen and (max-width: 480px) {
   main #div div p {
     font-size: 14px;
+    margin-bottom: 3px;
   }
 }
 main #div div iframe {
@@ -292,6 +300,7 @@ main #div div iframe {
   main #div div iframe {
     width: 80vw;
     height: 250px;
+    margin: 20px auto;
   }
 }
 

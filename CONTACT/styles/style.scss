@@ -15,6 +15,9 @@ header {
     -webkit-box-shadow: 0 0 30px 2px #2ca2aa;
     box-shadow: 30px #117d85;
     z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     nav {
         display: -webkit-box;
@@ -150,9 +153,9 @@ main {
         display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-flow: row wrap;
-                flex-flow: row wrap;
-        margin-top: 59px;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        margin-top: 110px;
         width: 100%;
 
         textarea {
@@ -170,7 +173,6 @@ main {
         }
         form {
             width: 100%;
-            margin-bottom: 50px;
 
             div {
                 display: -webkit-box;
@@ -193,7 +195,7 @@ main {
                     margin-bottom: 34px;
 
                     @media only screen and (max-width:480px) {
-                        height: 0;
+                        height: 16px;
                         padding: 14px;
                     }
                 }
@@ -220,6 +222,10 @@ main {
     #div {
         width: 100%;
 
+        @media only screen and (max-width:480px) {
+            margin-top: 40px;
+        }
+
         div {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -240,6 +246,7 @@ main {
 
                 @media only screen and (max-width:480px) {
                     font-size: 14px;
+                    margin-bottom: 3px;
                 }
             }        
             iframe {
@@ -250,6 +257,7 @@ main {
                 @media only screen and (max-width:480px) {
                    width: 80vw; 
                    height: 250px;
+                   margin: 20px auto;
                 }
             }
         }    

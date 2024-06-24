@@ -16,6 +16,9 @@ header {
     -webkit-box-shadow: 0 0 30px 2px #2ca2aa;
     box-shadow: 30px #117d85;
     z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     nav {
         display: -webkit-box;
@@ -147,9 +150,13 @@ header {
 main {
     width: 90%;
     margin: 0 auto;
+    margin-top: 130px;
+
+    @media only screen and (max-width: 480px) {
+        margin-top: 90px;
+    }
     
     div {
-        margin-top: 50px;
         border: 8px solid black;
 
         @media only screen and (max-width:740px) {
