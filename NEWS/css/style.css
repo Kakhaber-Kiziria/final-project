@@ -186,20 +186,18 @@ header nav form button {
 }
 
 main {
-  max-width: 600px;
+  width: 90%;
   margin: 0 auto;
-}
-@media only screen and (max-width: 480px) {
-  main {
-    width: 90%;
-  }
 }
 main div {
   margin-top: 50px;
-  border: 10px solid #444;
-  padding: 5px;
-  border-top-left-radius: 45px;
-  border-bottom-right-radius: 45px;
+  border: 8px solid black;
+}
+@media only screen and (max-width: 740px) {
+  main div {
+    border: 5px solid black;
+    padding: 5px;
+  }
 }
 main div h1 {
   font-size: 45px;
@@ -207,12 +205,63 @@ main div h1 {
   color: white;
   margin: 50px 0;
 }
+@media only screen and (max-width: 740px) {
+  main div h1 {
+    font-size: 28px;
+    margin: 20px 0;
+  }
+}
 main div img {
   width: 100%;
   margin: 20px 0;
 }
+@media only screen and (max-width: 740px) {
+  main div img {
+    margin: 10px 0;
+  }
+}
 main div p {
   font-size: 18px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+}
+@media only screen and (max-width: 740px) {
+  main div p {
+    font-size: 16px;
+  }
+}
+main #bigdiv {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border: 0;
+}
+main #bigdiv div {
+  border: 5px solid black;
+  width: 45%;
+  min-width: 300px;
+  margin-top: 50px;
+  padding: 5px;
+}
+@media only screen and (max-width: 740px) {
+  main #bigdiv div {
+    width: 100%;
+    min-width: 0;
+  }
+}
+main #bigdiv div h1 {
+  font-size: 28px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  margin: 20px 0;
+}
+main #bigdiv div img {
+  width: 100%;
+  height: 40vh;
+  margin: 10px 0;
+}
+main #bigdiv div p {
+  font-size: 16px;
   font-family: "Roboto Condensed", sans-serif;
   color: white;
 }

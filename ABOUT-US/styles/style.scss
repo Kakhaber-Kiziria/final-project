@@ -175,10 +175,15 @@ main {
             margin-right: 30px;
             margin-bottom: 50px;
 
-            @media only screen and (max-width:480px) {
-                width: 300px;
-                height: 400px;
+            @media only screen and (max-width:859px) {
                 margin-right: 0;
+            }
+
+            @media only screen and (max-width:480px) {
+                max-width: 300px;
+                min-width: 200px;
+                max-height: 400px;
+                min-height: 300px;
             }
 
             div {
@@ -188,8 +193,10 @@ main {
                 margin: 0;
 
                 @media only screen and (max-width:480px) {
-                    width: 300px;
-                    height: 200px;
+                    max-width: 300px;
+                    min-width: 200px;
+                    max-height: 200px;
+                    min-height: 150px;
                 }
 
                 img {
@@ -197,8 +204,10 @@ main {
                     height: 300px;
 
                     @media only screen and (max-width:480px) {
-                        width: 300px;
-                        height: 200px;
+                        max-width: 300px;
+                        min-width: 200px;
+                        max-height: 200px;
+                        min-height: 150px;
                     }
                 }
                 h1 {

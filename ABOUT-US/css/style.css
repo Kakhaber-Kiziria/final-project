@@ -214,11 +214,17 @@ main div div {
   margin-right: 30px;
   margin-bottom: 50px;
 }
+@media only screen and (max-width: 859px) {
+  main div div {
+    margin-right: 0;
+  }
+}
 @media only screen and (max-width: 480px) {
   main div div {
-    width: 300px;
-    height: 400px;
-    margin-right: 0;
+    max-width: 300px;
+    min-width: 200px;
+    max-height: 400px;
+    min-height: 300px;
   }
 }
 main div div div {
@@ -229,8 +235,10 @@ main div div div {
 }
 @media only screen and (max-width: 480px) {
   main div div div {
-    width: 300px;
-    height: 200px;
+    max-width: 300px;
+    min-width: 200px;
+    max-height: 200px;
+    min-height: 150px;
   }
 }
 main div div div img {
@@ -239,8 +247,10 @@ main div div div img {
 }
 @media only screen and (max-width: 480px) {
   main div div div img {
-    width: 300px;
-    height: 200px;
+    max-width: 300px;
+    min-width: 200px;
+    max-height: 200px;
+    min-height: 150px;
   }
 }
 main div div div h1 {
