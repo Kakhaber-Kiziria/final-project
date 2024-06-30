@@ -214,33 +214,33 @@ main {
                 margin-bottom: 60px;
             }
             h2 {
-                    color: black;
-                    font-size: 18px;
-                    font-family: "Roboto Condensed", sans-serif;
-                    margin-bottom: 5px;
-                    -webkit-transition: 1s;
-                    -o-transition: 1s;
-                    transition: 1s;
-                    border-top: 5px solid rgb(139, 139, 150);
+                color: black;
+                font-size: 18px;
+                font-family: "Roboto Condensed", sans-serif;
+                margin-bottom: 5px;
+                -webkit-transition: 1s;
+                -o-transition: 1s;
+                transition: 1s;
+                border-top: 5px solid rgb(139, 139, 150);
 
-                    &:hover {
-                        font-size: 20px;
-                        font-weight: 900;
-                    }
+                &:hover {
+                    font-size: 20px;
+                    font-weight: 900;
+                }
             }
             p {
-                    color: black;
-                    font-size: 18px;
-                    font-weight: bold;
-                    font-family: "Roboto Condensed", sans-serif;
-                    -webkit-transition: 1s;
-                    -o-transition: 1s;
-                    transition: 1s;
+                color: black;
+                font-size: 18px;
+                font-weight: bold;
+                font-family: "Roboto Condensed", sans-serif;
+                -webkit-transition: 1s;
+                -o-transition: 1s;
+                transition: 1s;
 
-                    &:hover {
-                        font-size: 20px;
-                        font-weight: 900;
-                    }
+                &:hover {
+                    font-size: 20px;
+                    font-weight: 900;
+                }
             } 
          }
     }

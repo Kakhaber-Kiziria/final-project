@@ -193,7 +193,11 @@ main h1 {
   font-size: 45px;
   font-family: "Roboto Condensed", sans-serif;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 10px;
   color: deepskyblue;
@@ -202,7 +206,11 @@ main h2 {
   font-size: 30px;
   font-family: "Roboto Condensed", sans-serif;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 10px;
   color: red;
@@ -218,7 +226,11 @@ main h3 {
 }
 @media only screen and (max-width: 600px) {
   main h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-left: 0;
   }
@@ -228,8 +240,15 @@ main ul {
 }
 @media only screen and (max-width: 600px) {
   main ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-left: 11px;
   }
@@ -250,7 +269,11 @@ main p {
 }
 @media only screen and (max-width: 600px) {
   main p {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-left: 0;
   }
